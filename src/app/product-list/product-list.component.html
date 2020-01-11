@@ -3,7 +3,7 @@
 <div *ngFor="let product of products">
   <h3>
       <a [title]="product.description">
-      {{ product.name }}
+      {{ product.name }} (${{ product.price }})
     </a>
   </h3>
 </div>
