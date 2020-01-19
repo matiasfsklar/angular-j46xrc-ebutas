@@ -6,6 +6,15 @@
       {{ product.name }} (${{ product.price }})
     </a>
   </h3>
+  
+  <p *ngIf="product.description.length > 0">
+    Description: {{ product.description }}
+  </p>
+
+  <button (click)="share()">
+    Share
+  </button>
+
 </div>
 
 <!-- 
